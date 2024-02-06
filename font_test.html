@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Font from S3 Example</title>
+    <style>
+      @font-face {
+        font-family: "Archivo Black";
+        src: url("https://chroneapp.s3.amazonaws.com/campaign-fonts/ArchivoBlack-Regular.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "Archivo Black", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 169px;
+      }
+
+      .content {
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      p {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Custom Font from S3 Example</h1>
+      <p>This text is using the custom font loaded from an S3 bucket.</p>
+    </div>
+  </body>
+</html>
